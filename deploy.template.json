@@ -77,13 +77,14 @@
                             "storageAccountType": "[parameters('osDiskType')]"
                         }
                     },
-                    "imageReference": {
-                        "publisher": "MicrosoftWindowsServer",
-                        "offer": "WindowsServer",
-                        "sku": "2016-Datacenter",
+                    
+                   "imageReference": {
+                        "publisher": "Canonical",
+                        "offer": "UbuntuServer",
+                        "sku": "18.04-LTS",
                         "version": "latest"
-                    }
-                },
+                    },
+                    
                 "networkProfile": {
                     "networkInterfaces": [
                         {
@@ -91,16 +92,13 @@
                         }
                     ]
                 },
+                    
                 "osProfile": {
                     "computerName": "[parameters('virtualMachineName')]",
                     "adminUsername": "[parameters('adminUsername')]",
                     "adminPassword": "[parameters('adminPassword')]",
-                    "windowsConfiguration": {
-                        "enableAutomaticUpdates": true,
-                        "provisionVmAgent": true
-                    }
-                },
-                "licenseType": "Windows_Server"
+                     }
+                            
             }
         }
     ],
