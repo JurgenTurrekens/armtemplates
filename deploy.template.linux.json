@@ -78,13 +78,12 @@
                         }
                     },
                     "imageReference": {
-                        "offer": "UbuntuServer",
                         "publisher": "Canonical",
+                        "offer": "UbuntuServer",
                         "sku": "18.04-LTS",
-                        "urn": "Canonical:UbuntuServer:18.04-LTS:latest",
-                        "urnAlias": "UbuntuLTS",
-                         "version": "latest"
+                        "version": "latest"
                     }
+                  
                 },
                 "networkProfile": {
                     "networkInterfaces": [
